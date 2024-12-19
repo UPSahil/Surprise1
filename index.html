@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="Images/pic1.jpg" alt="1" />
+          <h1>My Wifey</h1>
+          <div class="details">
+            <h2>My Wifey</h2>
+            <p>Naugthy</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/pic2.jpg" alt="2" />
+          <h1>My Love</h1>
+          <div class="details">
+            <h2>My Love</h2>
+            <p>One in Infinity</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/pic3.jpg" alt="3" />
+          <h1>My Sweet Heart</h1>
+          <div class="details">
+            <h2>My Sweet Heart</h2>
+            <p>Most Beautiful among all</p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="Images/PIC.jpg" alt="4" />
+          <h1>This is me</h1>
+          <div class="details">
+            <h2>Gunu</h2>
+            <p>Husband of this beautiful girl (& Web Developer)</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/pic4.jpg" alt="5" />
+          <h1>My Cutie Pie</h1>
+          <div class="details">
+            <h2>My Cutie Pie</h2>
+            <p>Cutest girl I ever met</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/pic5.jpg" alt="6" />
+          <h1>My Sweety Pie</h1>
+          <div class="details">
+            <h2>My Sweety Pie</h2>
+            <p>Sweet like a sweetttt....</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/pic6.jpg" alt="7" />
+          <h1>My Darling</h1>
+          <div class="details">
+            <h2>My Darling</h2>
+            <p>LOVED YOU THE MOST</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
